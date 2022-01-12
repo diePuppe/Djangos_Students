@@ -1,0 +1,13 @@
+{% extends 'web/base.html' %}
+
+{% block title %} Studentenwiki - Account erstellen {% endblock %}
+
+{% block authForm %}
+
+<form method="post" action="">
+    {{ register_form.as_p }}
+    {% csrf_token %}
+    <button type="submit">Account erstellen</button>
+    
+</form>
+{% endblock %}
