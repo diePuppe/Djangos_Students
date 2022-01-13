@@ -5,8 +5,8 @@
     <title>{% block title %} Studentenwiki {% endblock %}</title>
 </head>
 <body>
-<h1>CGI Studentswebsite</h1>
-{% if request.user.is.authenticated %}
+<h1>CGI Students Website</h1>
+{% if request.user.is_authenticated %}
 <p>Hallo {{request.user.username}} !</p>
 {% else %}
 <a href="{% url 'web:login' %}">Login</a>
