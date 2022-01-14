@@ -6,6 +6,8 @@
 
 <form method="post" action="">
     {{ login_form.as_p }}
+    {% csrf_token %}  <! important for secruity checking!>
+
     <button type="submit">Login</button>
 
 </form>
